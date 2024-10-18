@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+            background-image: url(img/banner1.jpg);
+            background-repeat: no-repeat;
+            background-position: cover;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            height: 150vh;
+        }
+        
+        .wrapper-container {
+            width: 600px;
+            height: 1100px;
+            background-color: rgb(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #1a70e7;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #1a70e7;
+        }
+        
+        .wrapper-container .input-box input {
+            position: relative;
+            width: 90%;
+            height: 50px;
+            border-radius: 6px;
+            padding: 0px 15px;
+        }
+        
+        .wrapper-container.input-box input,
+        textarea {
+            position: relative;
+            width: 90%;
+            height: 50px;
+            border-radius: 6px;
+            padding: 0px 15px;
+        }
+        
+        .wrapper-container.input-box input,
+        select {
+            position: relative;
+            width: 95%;
+            height: 50px;
+            border-radius: 6px;
+            padding: 0px 15px;
+        }
+        
+        .input-box {
+            margin-bottom: 20px;
+        }
+        
+        .input-box input[type=text] {
+            background-color: #ffffff;
+        }
+        
+        .input-box input[type=email] {
+            background-color: #ffffff;
+            color: #1a70e7;
+        }
+        
+        .input-box input[type=password] {
+            background-color: #ffffff;
+        }
+        
+        .input-box input[type=date] {
+            background-color: #ffffff;
+        }
+        
+        .input-box input[type=tel] {
+            background-color: #ffffff;
+        }
+        
+        .input-box textarea {
+            background-color: #ffffff;
+            color: white;
+        }
+        
+        .input-box select {
+            background-color: #ffffff;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            color: black;
+            border-radius: 10px;
+            border: unset;
+            cursor: pointer;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: #1a70e7;
+            margin-top: 10px;
+        }
+        
+        a {
+            color: #1a70e7;
+            text-decoration: underline;
+        }
+        
+        .Social-media {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .Social-media a {
+            display: inline-block;
+            text-decoration: none;
+            color: #1a70e7;
+            font-size: 20px;
+        }
+        
+        .Social-media a:hover {
+            color: Black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <h2>Registration Form</h2>
+        <form action="/submit_registration" method="post">
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name " required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" required>
+            </div>
+            <div class="input-box">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="confirm_password" required>
+            </div>
+            <div class="input-box">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" placeholder="dob" required>
+            </div>
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="phone" required>
+            </div>
+            <div class="input-box">
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="address" required></textarea>
+            </div>
+            <div class="input-box">
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="country" required>
+            </div>
+            <div class="input-box">
+                <label for="gender">Gender</label>
+                <select id="gender" placeholder="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+            </div>
+            <div class="btn-container">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="Login.html">Login</a></p>
+            </div>
+            <div class="Social-media">
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook" width="50px" height="50px"></a>
+                <a href="https://x.com/?lang=en"><img src="img/twitter1.png" alt="Twitter" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram1.png" alt="Instagram" width="50px" height="50px"></a>
+                <a href="https://www.youtube.com/"><img src="img/Youtude.png" alt="YouTube" width="50px" height="50px"></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

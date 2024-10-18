@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            background-image: url(img/banner.jpg);
+            background-repeat: no-repeat;
+            background-position: cover;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        
+        .wrapper {
+            width: 350px;
+            height: 550px;
+            background-color: rgb(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #1a70e7;
+        }
+        
+        .wrapper .input-box input {
+            position: relative;
+            width: 90%;
+            height: 50px;
+            border-radius: 6px;
+            padding: 0px 15px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1a70e7;
+        }
+        
+        .input-box {
+            margin-bottom: 20px;
+        }
+        
+        .input-box input[type=text] {
+            background-color: #FFFFFF;
+        }
+        
+        .input-box input[type=password] {
+            background-color: #FFFFFF;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            color: black;
+            border-radius: 10px;
+            border: unset;
+            cursor: pointer;
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .remember {
+            margin-right: 10px;
+        }
+        
+        .forgot-password {
+            color: #1a70e7;
+            text-decoration: underline;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: #1a70e7;
+            margin-top: 10px;
+        }
+        
+        a {
+            color: #1a70e7;
+            text-decoration: underline;
+        }
+        
+        .Home-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: #1a70e7;
+            margin-top: 10px;
+        }
+        
+        a {
+            color: #1a70e7;
+            text-decoration: underline;
+        }
+        
+        .Social-media {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .Social-media a {
+            display: inline-block;
+            text-decoration: none;
+            color: #1a70e7;
+            font-size: 20px;
+        }
+        
+        .Social-media a:hover {
+            color: Black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login Form</h1>
+            <br>
+            <div class="input-box">
+                <label for="username">Username</label>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="remember-forgot">
+                <div class="remember">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <br>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+            <br>
+            <div class="btn-container">
+                <button type="submit" class="btn">Login</button>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account? <a href="Register.html">Register</a></p>
+            </div>
+            <div class="Home-link">
+                <p>Redirect to home page?
+                    <a href="cake.html">Home</a></p>
+            </div>
+            <div class="Social-media">
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook" width="50px" height="50px"></a>
+                <a href="https://x.com/?lang=en"><img src="img/twitter1.png" alt="Twitter" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram1.png" alt="Instagram" width="50px" height="50px"></a>
+                <a href="https://www.youtube.com/"><img src="img/Youtude.png" alt="YouTube" width="50px" height="50px"></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

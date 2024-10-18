@@ -1,0 +1,150 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #f49086;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+
+/* Menu Section */
+
+.menu {
+    max-width: 10000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    /* Required for the prev and next buttons */
+}
+
+.menu h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+
+/* Wrapper for the menu-grid to handle overflow */
+
+.menu-wrapper {
+    overflow: hidden;
+    /* Hides overflow content when sliding */
+    position: relative;
+    width: 100%;
+}
+
+.menu-grid {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-category {
+    flex: 0 0 200px;
+    /* Ensures each item takes up a fixed width */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for carousel movement */
+}
+
+.menu-category img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.menu-category h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.menu-category p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 0;
+}
+
+.menu-category button {
+    background-color: #0beef6c1;
+    /* Bakery theme button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.menu-category button:hover {
+    background-color: #00c4cc;
+}
+
+
+/* Pagination Section */
+
+.pagination {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.pagination a.active {
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    color: #ff3d3d;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

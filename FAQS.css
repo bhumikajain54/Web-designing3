@@ -1,0 +1,156 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #ff6f61;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a.active {
+    background-color: #ff3d3d;
+}
+
+nav ul li a:hover {
+    background-color: #ff4c4c;
+}
+
+.faqs-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.faqs-section h1 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.faqs-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.faqs-container details {
+    margin-bottom: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+}
+
+.faqs-container summary {
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+}
+
+.faqs-container summary:hover {
+    color: #ff6f61;
+}
+
+.faqs-container p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #666;
+    display: block;
+    padding-left: 20px;
+}
+
+.faq-form-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.faq-form-section h2 {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.faq-form-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4c4c;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

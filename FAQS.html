@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Pankhuri's Cakes & Kitchen</title>
+    <link rel="stylesheet" href="FAQS.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Cake.html">Home</a></li>
+            <li><a href="OurStory.html">Our Story</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="TermsandConditions.html">Terms and Conditions</a></li>
+            <li><a href="FAQS.html" class="active">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section">
+        <h1>Frequently Asked Questions</h1>
+        <p>Below are answers to some of the most commonly asked questions about our bakery and services.</p>
+
+        <div class="faqs-container">
+
+            <!-- FAQ 1 -->
+            <details>
+                <summary>What types of cakes do you offer?</summary>
+                <p>We offer a wide variety of cakes including chocolate, vanilla, red velvet, and more. You can also order customized cakes for special occasions.</p>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details>
+                <summary>Do you make eggless cakes?</summary>
+                <p>Yes, all our cakes are eggless and made with the finest ingredients.</p>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details>
+                <summary>How far in advance should I place my order?</summary>
+                <p>We recommend placing your order at least 2-3 days in advance, especially for custom cakes. For standard cakes, we can often accommodate same-day orders.</p>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details>
+                <summary>Do you offer delivery?</summary>
+                <p>Yes, we offer delivery across Navi Mumbai and nearby areas. You can also pick up your order from our bakery.</p>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details>
+                <summary>Can I customize my cake?</summary>
+                <p>Absolutely! We specialize in custom cakes. You can provide your design ideas, flavors, and specifications, and we will create a cake tailored to your needs.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="faq-form-section">
+        <h2>Have More Questions? Contact Us!</h2>
+        <p>If you have any other questions, feel free to reach out by submitting the form below:</p>
+
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Question:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit Question</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pankhuri's Cakes & Kitchen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
